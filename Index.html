@@ -1,0 +1,73 @@
+<!--
+  Assignment: Using the jQuery UI Slider and Tab Widgets
+  Rishav Mahant, UMass Lowell Computer Science, Rishav_Mahant@student.uml.edu
+  Copyright (c) 2020 by Rishav Mahant. All rights reserved. May be freely copied
+  or excerpted for educational purposes with credit to the author.
+  Updated by Rishav Mahant on November 25th, 2020 at 10:00pm
+  -->
+<!--
+  Name: Rishav Mahant
+  Email:Rishav_Mahant@student.uml.edu
+  Umass Lowell Student
+  Course:91.61 GUI Programming I
+  -->
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mutiplication Table</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- jQuery CSS for the sliders and tabs widgets -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <!-- Local Styling -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Form -->
+        <div id="form-container">
+            <div id="form-wrapper">
+            <form id="input-form" novalidate>
+                <ul id="form-list">
+                    <li><h1>Enter a range of integers.</h1></li>
+                    <li><h2>(order doesn't matter):</h2></li>
+                    <div id="horizontal-container">
+                        <li><label>Horizontal Axis:</label></li>
+                        <li><input type="number" id="xBegin" required><div id="sliderXBegin"></div></li>
+                        <li><span id="spanXBegin">&nbsp;</span></li>
+                        <li><input type="number" id="xEnd" required><div id="sliderXEnd"></div></li>
+                        <li><span id="spanXEnd">&nbsp;</span></li>
+                    </div>
+                    <div id="vertical-container">
+                        <li><label>Vertical Axis</label></li>
+                        <li><input type="number" id="yBegin" required><div id="sliderYBegin"></div></li>
+                        <li><span id="spanYBegin">&nbsp;</span></li>
+                        <li><input type="number" id="yEnd" required><div id="sliderYEnd"></div></li>
+                        <li><span id="spanYEnd">&nbsp;</span></li>
+                        <li><span id="error" aria-live="polite">&nbsp;</span></li>
+                    </div><br>
+                    <li>
+                        <button id="button">Submit</button>
+                        <button id="close-all-tabs">Close all Tabs</button>
+                    </li>
+
+                </ul>
+            </form><br>
+            </div>
+        </div><br>
+        <!-- Tabs -->
+        <div id="tabs">
+            <ul id="tabs-list"></ul>
+        </div>
+        <!-- Table -->
+        <div id="table-container">
+            <div id="table-wrapper">
+                <table id="dyn-table"></table>
+            </div>
+        </div>
+        <!-- Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/main.js" async defer></script>
+    </body>
+</html>

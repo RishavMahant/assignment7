@@ -1,0 +1,127 @@
+
+body {
+    background-color: #e0e0e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 450px;
+}
+
+#table-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    overflow-x: auto;
+    overflow: auto;
+    height: 300px;
+}
+
+
+#table-wrapper {
+    grid-column: 2 / 5;
+    overflow-x: scroll;
+}
+
+
+tr:nth-child(even) {
+    background-color: #bbb;
+}
+
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+td {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    vertical-align: top;
+}
+
+th {
+    background: #333;
+    color: #f4b223;
+    min-width: 1.6rem;
+    position: sticky;
+    top: 0;
+}
+
+th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #333;
+}
+
+#form-list {
+    list-style: none;
+}
+
+#form-container {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#form-wrapper {
+    display: inline-block;
+}
+
+#input-form {
+    text-align: left;
+}
+
+#input-form h1 {
+    font-size: 1.2rem;
+}
+
+#input-form h2 {
+    font-size: 1.0rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn {
+    margin-bottom: 1.2rem;
+}
+
+
+input:valid {
+    box-shadow: 0 0 2px 1px green;
+} */
+
+#error {
+    font-size: 0.6rem;
+    color: red;
+}
+
+span {
+    color: green;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.validField {
+    color: green;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.errorField {
+    color: red;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.ui-slider {
+    width: 8em;
+    float: right;
+    margin-left: 1em;
+}
+
+
+#close-all-tabs {
+    margin-left: 1em;
+}
